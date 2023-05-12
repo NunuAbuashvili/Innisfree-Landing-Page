@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Innisfree Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Header with logo and navigation bar -->
+    <header id="main__header">
+      <nav class="nav" id="nav-bar">
+        <img
+          class="logo header__logo"
+          src="./Images/Innisfree-logo.svg.png"
+          id="header-img"
+        />
+        <ul class="nav__bar">
+          <li>
+            <a class="nav__link" href="#shop">Shop</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#holiday_gift_guide"
+              >Holiday gift guide</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#reviews">reviews</a>
+          </li>
+          <li>
+            <a class="nav__link" href="#about">about</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main section with the form and subscription button -->
+      <div class="hero">
+        <h2>Natural Benefits from Jeju Island</h2>
+        <p class="description">
+          Sign up to receive exclusive online offers, news about our latest
+          products and more!
+        </p>
+        <form id="form">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <p class="error__message hidden">Oops! Please check your email</p>
+          <p class="error__empty hidden">Oops! Please add your email</p>
+          <button class="btn btn__submit">Submit</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Shop -->
+    <section class="section section__1" id="shop">
+      <!-- Cleanser -->
+      <div class="cleanser">
+        <div class="cleanser_image">
+          <img src="./Images/cleanser.jpeg" />
+        </div>
+        <h3>Green Tea Foam Face Cleanser</h3>
+        <p class="key-ingredient">with Grean Tea</p>
+        <div class="reviews">
+          <p class="leaves">🍀🍀🍀🍀🍀</p>
+          <p class="num_reviews">75 Reviews</p>
+        </div>
+        <p class="price">$23</p>
+      </div>
+
+      <!-- Hand Cream -->
+      <div class="hand_cream">
+        <div class="hand_cream_image">
+          <img src="./Images/hand_cream_set.jpeg" />
+        </div>
+        <h3>Limited Edition Jeju Life Perfumed Hand Cream Set</h3>
+        <div class="reviews">
+          <p class="leaves">🍀🍀🍀🍀🍀</p>
+          <p class="num_reviews">50 Reviews</p>
+        </div>
+        <p class="price">$19</p>
+      </div>
+
+      <!-- Balancing Line -->
+      <div class="balancing_line">
+        <div class="balancing_line_image">
+          <img src="./Images/balancing_line.jpeg" />
+        </div>
+        <h3>Green Tea Balancing Skin Care Set</h3>
+        <div class="reviews">
+          <p class="leaves">🍀🍀🍀🍀🍀</p>
+          <p class="num_reviews">80 Reviews</p>
+        </div>
+        <p class="price">$21</p>
+      </div>
+    </section>
+
+    <!-- Holiday Gift Guide -->
+    <section class="section section__2" id="holiday_gift_guide">
+      <h1>This is the season for:</h1>
+      <section id="holiday_gift">
+        <!-- Relaxing & Pampering -->
+        <div class="grid">
+          <div class="icon">
+            <img src="./Images/gift-icon.png" />
+          </div>
+          <div class="desc">
+            <h3>Relaxing & Pampering</h3>
+            <p>Unwind during the busy holiday season.</p>
+            <button type="submit" id="shop_now">SHOP NOW</button>
+          </div>
+        </div>
+
+        <!-- Your Mistletoe Moment -->
+        <div class="grid">
+          <div class="icon">
+            <img src="./Images/sock-icon.png" />
+          </div>
+          <div class="desc">
+            <h3>Your Mistletoe Moment</h3>
+            <p>Glow inside & out for your mistletoe moment.</p>
+            <button type="submit" id="shop_now">SHOP NOW</button>
+          </div>
+        </div>
+
+        <!-- Smooth & Bright Skin -->
+        <div class="grid">
+          <div class="icon">
+            <img src="./Images/cane-icon.png" />
+          </div>
+          <div class="desc">
+            <h3>Smooth & Bright Skin</h3>
+            <p>Prep your skin for holiday group photos.</p>
+            <button type="submit" id="shop_now">SHOP NOW</button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section section__3" id="reviews">
+      <div class="slider">
+        <!-- First review -->
+        <div class="slide slide--1">
+          <div class="review">
+            <h3 class="review__header">Naturally-sourced beauty products!</h3>
+            <blockquote class="review__text">
+              Innisfree, the number one beauty brand in Korea, has successfully
+              crossed into the global market. Despite its worldwide popularity,
+              the brand has remained faithful to its core mission — creating
+              naturally-sourced beauty products of the highest quality at an
+              accessible price point.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Second review -->
+        <div class="slide slide--2">
+          <div class="review">
+            <h3 class="review__header">Eco-conscious activities!</h3>
+            <blockquote class="review__text">
+              Not only does Innisfree responsibly source all the ingredients for
+              its products from Jeju Island off the southern coast of South
+              Korea, but it participates in eco-conscious initiatives that
+              preserve and protect Jeju Island's environment.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- third review -->
+        <div class="slide slide--3">
+          <div class="review">
+            <h3 class="review__header">Smooth and bright skin!</h3>
+            <blockquote class="review__text">
+              Made with Jeju volcanic clusters and lactic acid that absorbs
+              excess oil, exfoliates the skin, and helps to minimize the look of
+              pores, Super Volcanic Clusters Pore Clearing Clay Mask deeply
+              cleanses the skin and leaves it feeling smooth and bright. It has
+              the consistency of a classic clay mask that is easily rinsed off
+              without stripping the skin of its natural barrier.
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- fourth review -->
+        <div class="slide slide--4">
+          <div class="review">
+            <h3 class="review__header">A great started eye serum!</h3>
+            <blockquote class="review__text">
+              Green Tea Seed Intensive Hydrating Roll-On Eye Serum is infused
+              with green tea seed oil that is not only hydrating but helps to
+              strengthen the skin's natural moisture barrier, which is the best
+              way to prevent signs of aging. It is not as rich or creamy as a
+              traditional eye cream but is a great starter eye serum for anyone
+              looking to upgrade their everyday routine.
+            </blockquote>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section__4" id="about">
+      <div class="images">
+        <img src="./Images/image_one.jpg" />
+        <img src="./Images/image_two.jpg" />
+      </div>
+      <p>
+        We offer <strong>innovative beauty solutions</strong> powered by the
+        <strong>finest natural ingredients</strong> responsibly sourced from
+        Korea’s pristine Jeju Island.
+      </p>
+      <p>
+        Our proprietary extraction methods preserve the purity and potency of
+        these wholesome ingredients from plant to bottle, offering advanced
+        formulas that
+        <strong
+          >safely address all skin concerns without the use of harmful chemicals
+          and preservatives</strong
+        >.
+      </p>
+      <p>
+        With the wonders of nature at the heart of innisfree, we take care to
+        <strong>preserve and protect the environment</strong> in all that we do.
+      </p>
+    </section>
+  </body>
+</html>
